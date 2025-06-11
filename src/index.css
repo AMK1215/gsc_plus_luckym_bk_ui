@@ -1,0 +1,89 @@
+:root {
+  font-family: 'Source Sans 3', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #f4f6f9;
+}
+
+/* Custom styles that are not in AdminLTE */
+.bg-body-tertiary {
+  background-color: #f4f6f9 !important;
+}
+
+/* Small Box Icon */
+.small-box-icon {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 70px;
+  color: rgba(0,0,0,.15);
+}
+
+/* Navbar Badge */
+.navbar-badge {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 0.6rem;
+  padding: 2px 4px;
+  border-radius: 50%;
+}
+
+/* User Image */
+.user-image {
+  width: 2.1rem;
+  height: 2.1rem;
+  object-fit: cover;
+}
+
+/* Sidebar collapse styles */
+.sidebar-collapsed .app-sidebar {
+  width: 60px !important;
+  min-width: 60px !important;
+  max-width: 60px !important;
+  transition: width 0.3s;
+  overflow-x: hidden;
+}
+.sidebar-collapsed .app-main,
+.sidebar-collapsed .app-footer,
+.sidebar-collapsed .app-header {
+  margin-left: 60px !important;
+  transition: margin-left 0.3s;
+}
+.app-sidebar.collapsed .sidebar-brand .brand-text {
+  display: none;
+}
+.app-sidebar.collapsed .sidebar-menu .nav-link p {
+  display: none;
+}
+.app-sidebar.collapsed .sidebar-menu .nav-link i.nav-icon {
+  margin-right: 0;
+}
+.app-sidebar.collapsed .sidebar-brand {
+  justify-content: center;
+}
+
+/* Responsive: collapse sidebar on small screens */
+@media (max-width: 991.98px) {
+  .app-sidebar {
+    left: -250px;
+    transition: left 0.3s;
+  }
+  .sidebar-collapsed .app-sidebar {
+    left: 0;
+    width: 20px !important;
+    min-width: 20px !important;
+    max-width: 20px !important;
+  }
+  .sidebar-collapsed .app-main,
+  .sidebar-collapsed .app-footer,
+  .sidebar-collapsed .app-header {
+    margin-left: 0 !important;
+  }
+}
