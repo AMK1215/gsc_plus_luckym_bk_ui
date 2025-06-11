@@ -12,7 +12,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css'
 // Import OverlayScrollbars styles
 import 'overlayscrollbars/styles/overlayscrollbars.css'
 // Import AdminLTE CSS
-import '/src/assets/dist/css/adminlte.min.css'
+import '/css/adminlte.min.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
